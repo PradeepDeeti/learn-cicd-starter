@@ -98,6 +98,6 @@ func main() {
     		IdleTimeout: 120 * time.Second,
 	}
 
-	log.Printf("Serving on port: %s\n", port)
+	log.Printf("Serving on port: %q\n", port) // #nosec G706
 	log.Fatal(srv.ListenAndServe())
 }
